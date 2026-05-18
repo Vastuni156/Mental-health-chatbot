@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindscape AI - Dashboard</title>
+    <link rel="stylesheet" href="../static/dashboard.css">
+</head>
+<body class="app-body">
+    <nav class="sidebar">
+        <div class="logo-icon">🌸</div>
+        <a href="/chatbot">🏠 Home</a>
+        <a href="analytics.html">📈 Analytics</a>
+        <a href="#">📓 Journal</a>
+        <a href="logout.html" class="logout-link">🚪 Logout</a>
+    </nav>
+
+    <main class="dashboard-content">
+        <header class="topbar">
+            <span>Mindscape AI</span>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <div class="col-left">
+                <div class="glass-panel progress-panel">
+                    <h3>Progress Overview</h3>
+                    <div class="circle-chart">75%</div>
+                    <ul class="stats-list">
+                        <li>Wellness Goal: 75%</li>
+                        <li>Progress Goal: 35%</li>
+                    </ul>
+                </div>
+                <div class="glass-panel journal-panel">
+                    <h3>Daily Journal</h3>
+                    <p>Today's Prompt: Reflect on a small victory.</p>
+                    <button class="btn-secondary">Start Journaling</button>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="glass-panel chat-panel">
+                    <h3>Chatbot Interaction</h3>
+                    <div class="chat-history" id="chatHistory">
+                        <div class="message bot">Hello, I am Mindscape. How are you feeling today?</div>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chatInput" placeholder="Send a message...">
+                        <button id="sendBtn">➤</button>
+                    </div>
+                </div>
+                <div class="glass-panel activity-feed">
+                    <h3>Activity Feed</h3>
+                    <div class="feed-item">🧘 Meditation Session - 7 mins ago</div>
+                    <div class="feed-item">📓 Logged Activity - 3 hours ago</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../static/script.js"></script>
+</body>
+</html>
